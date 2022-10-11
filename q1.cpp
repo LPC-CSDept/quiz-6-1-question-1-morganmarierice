@@ -57,3 +57,5 @@ void swapTwoValues(float &fnum1, float &fnum2)
 	fnum1 = fnum2;
 	fnum2 = blank;
 }
+//had to fix blank in swapTwoValues(float &, float &) so that it was a float. At first, it was 
+//declared as integer, so the decimal was being cut off
