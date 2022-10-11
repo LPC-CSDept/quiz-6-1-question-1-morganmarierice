@@ -15,7 +15,7 @@
       "setup": "",
       "run": "g++ -std=c++11 q1.cpp && ./a.out",
       "input": "12.34 98.76",
-      "output": "[98.76, 12.34]",
+      "output": "[\\w,\\w]*98\\.76[\\w,\\W]*12\\.34[\\w,\\W]*",
       "comparison": "regex",
       "timeout": 10,
       "points": 3
