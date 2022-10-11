@@ -5,6 +5,11 @@ using namespace std;
 //********************
 // Declare Function Prototypes
 //********************
+void getinput(int &, int &);
+void getinput(float &, float &);
+void swapTwoValues(int &, int &);
+void swapTwoValues(float &, float &);
+
 
 int main()
 {
@@ -25,3 +30,30 @@ int main()
 // ******************************
 // Implement all your functions here
 // ******************************
+
+void getinput(int &num1, int &num2)
+{
+	cout << "Enter two integers\n";
+	cin >> num1 >> num2;
+}
+
+void getinput(float &fnum1, float &fnum2)
+{
+	cout << "Enter two floats\n";
+	cin >> fnum1 >> fnum2;
+}
+
+void swapTwoValues(int &num1, int &num2)
+{
+	int blank = num1;
+	num1 = num2;
+	num2 = blank;
+}
+
+void swapTwoValues(float &fnum1, float &fnum2)
+{
+	cout << fixed << setprecision(2) << endl;
+	float blank = fnum1;
+	fnum1 = fnum2;
+	fnum2 = blank;
+}
