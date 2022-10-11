@@ -1,21 +1,11 @@
 {
   "tests": [
     {
-      "name": "T1",
-      "setup": "",
-      "run": "g++ -std=c++11 q1.cpp && ./a.out",
-      "input": "10 20",
-      "output": "[\\w,\\W]*20[\\w,\\W]*10[\\w,\\W]",
-      "comparison": "regex",
-      "timeout": 10,
-      "points": 3
-    },
-    {
       "name": "T2",
       "setup": "",
       "run": "g++ -std=c++11 q1.cpp && ./a.out",
-      "input": "12.34 98.76",
-      "output": "[\\w,\\w]*98\\.76[\\w,\\W]*12\\.34[\\w,\\W]*",
+      "input": "12 20\r\n12.34 98.76",
+      "output": "[\\w,\\w]*12[\\w,\\W]*20[\\w,\\W]*\\n\r\n[\\w,\\w]*98\\.76[\\w,\\W]*12\\.34[\\w,\\W]*",
       "comparison": "regex",
       "timeout": 10,
       "points": 3
